@@ -20,6 +20,9 @@ class TestLocators:
     # Локаторы для проверки выхода из профиля
     LOGOUT_BUTTON = By.XPATH, './/button[text()="Выход"]'
     ACCOUNT_BUTTON = By.XPATH, './/p[text()="Личный Кабинет"]'
+    # Локаторы для проверки переходов
+    CONSTRUCTOR = (By.XPATH, './/p[text()="Конструктор"]')
+    LOGO = (By.XPATH, './/a[@href="/"]')
 
 
 
