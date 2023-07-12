@@ -25,6 +25,8 @@ class TestLocators:
     LOGO = By.XPATH, './/a[@href="/"]'
     # Локаторы проверки переходов к разделам
     BUTTON_ROLLS = By.XPATH, './/div/div/*[text()="Булки"]'
+    #BUTTON_ROLLS = By.XPATH, './/*[(@class="Булки")]'
+    #BUTTON_ROLLS = By.XPATH, "//*[@id=\"root\"]/div/main/section[1]/div[1]/div[1]"
     BUTTON_SAUCES = By.XPATH, './/div/div/*[text()="Соусы"]'
     BUTTON_TOPPINGS = By.XPATH, './/div/div/*[text()="Начинки"]'
     TEXT_ROLLS = By.XPATH, './/h2[text()="Булки"]'

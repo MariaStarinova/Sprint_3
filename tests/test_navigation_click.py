@@ -5,7 +5,7 @@ from data import valid_email, valid_password
 
 class TestRegistration:
 
-    #Проверка перехода по клику на «Личный кабинет»--failed
+    # Проверка перехода по клику на «Личный кабинет»--failed
     def test_navigation_personal_account(self, driver):
         driver.get("https://stellarburgers.nomoreparties.site/login")
 

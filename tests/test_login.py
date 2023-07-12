@@ -22,7 +22,7 @@ class TestRegistration:
         assert driver.find_element(*TestLocators.ORDER_BUTTON).text == "Оформить заказ"
 
 
-    #Проверка входа через кнопку «Личный кабинет»
+    # Проверка входа через кнопку «Личный кабинет»
     def test_login_link(self, driver):
         driver.get("https://stellarburgers.nomoreparties.site/")
         driver.find_element(*TestLocators.LOGIN_LINK).click()
