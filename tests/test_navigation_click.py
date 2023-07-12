@@ -17,7 +17,7 @@ class TestRegistration:
 
         WebDriverWait(driver, 10).until(EC.element_to_be_clickable(TestLocators.ACCOUNT_BUTTON)).click()
 
-       assert driver.current_url == "https://stellarburgers.nomoreparties.site/account/profile"
+        assert driver.current_url == "https://stellarburgers.nomoreparties.site/account/profile"
 
 
 

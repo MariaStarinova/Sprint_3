@@ -21,8 +21,15 @@ class TestLocators:
     LOGOUT_BUTTON = By.XPATH, './/button[text()="Выход"]'
     ACCOUNT_BUTTON = By.XPATH, './/p[text()="Личный Кабинет"]'
     # Локаторы для проверки переходов
-    CONSTRUCTOR = (By.XPATH, './/p[text()="Конструктор"]')
-    LOGO = (By.XPATH, './/a[@href="/"]')
+    CONSTRUCTOR = By.XPATH, './/p[text()="Конструктор"]'
+    LOGO = By.XPATH, './/a[@href="/"]'
+    # Локаторы проверки переходов к разделам
+    BUTTON_ROLLS = By.XPATH, './/div/div/*[text()="Булки"]'
+    BUTTON_SAUCES = By.XPATH, './/div/div/*[text()="Соусы"]'
+    BUTTON_TOPPINGS = By.XPATH, './/div/div/*[text()="Начинки"]'
+    TEXT_ROLLS = By.XPATH, './/h2[text()="Булки"]'
+    TEXT_SAUCES = By.XPATH, './/h2[text()="Соусы"]'
+    TEXT_TOPPINGS = By.XPATH, './/h2[text()="Начинки"]'
 
 
 
