@@ -16,8 +16,10 @@ class TestLocators:
     EMAIL_INPUT_LOGIN = By.XPATH, './/label[text()="Email"]/following-sibling::input'
     LINK_RESTORE_PASSWORD = By.XPATH, './/button[text()="Восстановить пароль"]'
     ORDER_BUTTON = By.XPATH, './/button[text()="Оформить заказ"]'
-    BUTTON_ENTER_FIELD = (By.XPATH, ".//*[text()='Войти']")
+    BUTTON_ENTER_FIELD = By.XPATH, './/*[text()="Войти"]'
     # Локаторы для проверки выхода из профиля
+    LOGOUT_BUTTON = By.XPATH, './/button[text()="Выход"]'
+    ACCOUNT_BUTTON = By.XPATH, './/p[text()="Личный Кабинет"]'
 
 
 
