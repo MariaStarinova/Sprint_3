@@ -17,8 +17,6 @@ class TestLocators:
     LINK_RESTORE_PASSWORD = By.XPATH, './/button[text()="Восстановить пароль"]'
     ORDER_BUTTON = By.XPATH, './/button[text()="Оформить заказ"]'
     BUTTON_ENTER_FIELD = (By.XPATH, ".//*[text()='Войти']")
-
-
     # Локаторы для проверки выхода из профиля
 
 

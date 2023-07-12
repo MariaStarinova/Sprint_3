@@ -9,7 +9,6 @@ def generate():
 
     return name, email, password
 
-
 name, email, password = generate()
 
 valid_email = 'marystar@ya.ru'
