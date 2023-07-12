@@ -1,6 +1,6 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from tests.locators import TestLocators
+from locators import TestLocators
 from data import valid_email, valid_password
 
 class TestRegistration:
@@ -16,6 +16,8 @@ class TestRegistration:
         driver.find_element(*TestLocators.BUTTON_ENTER).click()
 
         WebDriverWait(driver, 10).until(EC.element_to_be_clickable(TestLocators.ACCOUNT_BUTTON)).click()
+
+        WebDriverWait(driver, 10).until(EC.element_to_be_clickable(TestLocators.LOGOUT_BUTTON))
 
         assert driver.current_url == "https://stellarburgers.nomoreparties.site/account/profile"
 
