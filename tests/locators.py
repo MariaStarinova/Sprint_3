@@ -10,12 +10,13 @@ class TestLocators:
     # Локаторы для проверки авторизации
     HEADING_ON_LOG_IN_PAGE = By.XPATH, './/h2[text()="Вход"]'
     BUTTON_ENTER = By.XPATH, './/button[text()="Войти"]'
-    LOGIN_LINK = (By.XPATH, './/p[text()="Личный Кабинет"]')
-    LOGIN_ACCOUNT_BUTTON = (By.XPATH, './/button[contains(text(),"Войти в аккаунт")]')
+    LOGIN_LINK = By.XPATH, './/p[text()="Личный Кабинет"]'
+    LOGIN_ACCOUNT_BUTTON = By.XPATH, './/button[contains(text(),"Войти в аккаунт")]'
     PASSWORD_INPUT_LOGIN = By.XPATH, './/input[(@name="Пароль")]'
     EMAIL_INPUT_LOGIN = By.XPATH, './/label[text()="Email"]/following-sibling::input'
     LINK_RESTORE_PASSWORD = By.XPATH, './/button[text()="Восстановить пароль"]'
     ORDER_BUTTON = By.XPATH, './/button[text()="Оформить заказ"]'
+    BUTTON_ENTER_FIELD = (By.XPATH, ".//*[text()='Войти']")
 
 
     # Локаторы для проверки выхода из профиля
