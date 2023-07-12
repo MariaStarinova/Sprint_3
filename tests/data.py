@@ -10,5 +10,5 @@ def generate():
     return name, email, password
 
 
-#   name, email, password = generate()
+name, email, password = generate()
 

@@ -9,12 +9,13 @@ class TestLocators:
     PASSWORD_ERROR_REGISTRATION = By.XPATH, './/p[text()="Некорректный пароль"]'
     # Локаторы для проверки авторизации
     HEADING_ON_LOG_IN_PAGE = By.XPATH, './/h2[text()="Вход"]'
-    BUTTON_ENTER = (By.XPATH, './/*[text()="Войти"]')
+    BUTTON_ENTER = By.XPATH, './/button[text()="Войти"]'
     LOGIN_LINK = (By.XPATH, './/p[text()="Личный Кабинет"]')
     LOGIN_ACCOUNT_BUTTON = (By.XPATH, './/button[contains(text(),"Войти в аккаунт")]')
-    NAME_INPUT_LOGIN = By.XPATH, './/label[text()="Имя"]/following-sibling::input'
+    PASSWORD_INPUT_LOGIN = By.XPATH, './/input[(@name="Пароль")]'
     EMAIL_INPUT_LOGIN = By.XPATH, './/label[text()="Email"]/following-sibling::input'
     LINK_RESTORE_PASSWORD = By.XPATH, './/button[text()="Восстановить пароль"]'
+    ORDER_BUTTON = By.XPATH, './/button[text()="Оформить заказ"]'
 
 
     # Локаторы для проверки выхода из профиля
