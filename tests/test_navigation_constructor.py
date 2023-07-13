@@ -5,9 +5,10 @@ from locators import TestLocators
 class TestNavigationConstructor:
 
     def test_navigation_list_of_rolls(self, driver):
-        driver.find_element(*TestLocators.BUTTON_ROLLS)
-        WebDriverWait(driver, 10).until(EC.visibility_of_element_located(TestLocators.TEXT_ROLLS))
-        assert driver.find_element(*TestLocators.TEXT_ROLLS).text == "Булки"
+        driver.find_element(*TestLocators.BUTTON_SAUCES).click()
+        WebDriverWait(driver, 10).until(EC.element_to_be_clickable(TestLocators.TEXT_SAUCES)).click()
+        driver.find_element(*TestLocators.BUTTON_ROLLS).click()
+        assert WebDriverWait(driver, 10).until(EC.visibility_of_element_located(TestLocators.TEXT_ROLLS))
 
     def test_navigation_list_of_sauces(self, driver):
         driver.find_element(*TestLocators.BUTTON_SAUCES).click()

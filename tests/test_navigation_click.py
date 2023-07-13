@@ -3,9 +3,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from locators import TestLocators
 from data import valid_email, valid_password
 
-class TestRegistration:
+class TestNavigationClick:
 
     def test_navigation_personal_account(self, driver):
+        driver.get("https://stellarburgers.nomoreparties.site/login")
         driver.find_element(*TestLocators.EMAIL_INPUT_LOGIN).send_keys(valid_email)
         driver.find_element(*TestLocators.PASSWORD_INPUT_LOGIN).send_keys(valid_password)
         driver.find_element(*TestLocators.BUTTON_ENTER).click()
